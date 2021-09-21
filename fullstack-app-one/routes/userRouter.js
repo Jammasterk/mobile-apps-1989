@@ -13,7 +13,8 @@ userRouter.post("/", upload.single("image"), async (req, res) => {
 			location: req.body.location,
 			bio: req.body.bio,
 			avatar: result.secure_url,
-			cloudinary_id: result.public_id
+			cloudinary_id: result.public_id,
+			user: req.user._id
 		})
 		await user.save()
 		res.json(user)

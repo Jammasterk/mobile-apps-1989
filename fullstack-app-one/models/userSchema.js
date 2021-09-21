@@ -28,6 +28,11 @@ const userSchema = new Schema({
 	},
 	cloudinary_id: {
 		type: String
+	},
+	user: {
+		type: Schema.Types.ObjectId,
+		ref: "Auth",
+		required: true
 	}
 })
 
