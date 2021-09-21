@@ -73,7 +73,7 @@ userRouter.delete("/:userId", async (req, res, next) => {
 		await user.remove()
 		res.json(user)
 	} catch (error) {
-		res.status(500).send(new Error("user profile removed"))
+		res.status(500).send(new Error("something went wrong"))
 	}
 })
 

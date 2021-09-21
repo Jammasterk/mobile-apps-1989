@@ -4,6 +4,10 @@ const PORT = 8080
 const morgan = require('morgan')
 const app = express()
 require("dotenv").config()
+const config = require('./firebaseConfig')
+
+
+console.log(config)
 
 
 app.use(morgan("dev"))
