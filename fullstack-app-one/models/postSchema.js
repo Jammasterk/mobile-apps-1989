@@ -6,6 +6,10 @@ const postSchema = new Schema({
 		type: String,
 		required: true,
 	},
+	author: {
+		type: String,
+		required: false
+	},
 	post: {
 		type: String,
 		required: true
@@ -15,6 +19,17 @@ const postSchema = new Schema({
 	},
 	postImageTwo: {
 		type: String
+	},
+	postImageThree: {
+		type: String
+	},
+	postImageFour: {
+		type: String
+	},
+	user: {
+		type: Schema.Types.ObjectId,
+		ref: "User",
+		required: true
 	}
 })
 

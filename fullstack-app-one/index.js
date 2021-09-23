@@ -4,11 +4,7 @@ const PORT = 8080
 const morgan = require('morgan')
 const app = express()
 require("dotenv").config()
-const config = require('./firebaseConfig')
 const expressJwt = require('express-jwt')
-
-// console.log(config)
-
 
 app.use(morgan("dev"))
 app.use(express.json())
@@ -27,6 +23,7 @@ app.use(
 );
 
 app.use("/api/user", require('./routes/userRouter'))
+app.use("/api/post", (require('./routes/postRouter')))
 
 app.listen(PORT, () => console.log(`Connected to DB on PORT ${PORT}`))
 
