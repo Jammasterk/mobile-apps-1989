@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const express = require('express')
-const PORT = 8080
+const PORT = 5000
 const morgan = require('morgan')
 const app = express()
 require("dotenv").config()

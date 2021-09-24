@@ -26,6 +26,9 @@ const postSchema = new Schema({
 	postImageFour: {
 		type: String
 	},
+	cloudinary_id: {
+		type: String
+	},
 	user: {
 		type: Schema.Types.ObjectId,
 		ref: "User",
