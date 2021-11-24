@@ -1,0 +1,16 @@
+{
+  "emulators": {
+    "functions": {
+      "port": 4500
+    },
+    "firestore": {
+      "port": 4501
+    },
+    "storage": {
+      "port": 4502
+    },
+    "ui": {
+      "enabled": true
+    }
+  }
+}
